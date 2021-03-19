@@ -180,6 +180,10 @@
                   <p class="old-price">32500 Р.</p>
                   <p class="buy-button">25500 Р.</p>
                 </div>
+                <div class="perforator-buy">
+                  <a href="#"><img src="img/icon-cart.svg" alt="Корзина"><span class="cart-button">КУПИТЬ</span></a>
+                  <a href="#"><span class="bookmark-button">В ЗАКЛАДКИ</span></a>
+                </div>
               </div>
               <div class="perforator-block new-products">
                 <div class="perforator-image">
@@ -189,6 +193,10 @@
                   <p class="perforator-name">Перфоратор BOSCH BFG 3000</p>
                   <p class="old-price">22500 Р.</p>
                   <p class="buy-button">15500 Р.</p>
+                </div>
+                <div class="perforator-buy">
+                  <a href="#"><img src="img/icon-cart.svg" alt="Корзина"><span class="cart-button">КУПИТЬ</span></a>
+                  <a href="#"><span class="bookmark-button">В ЗАКЛАДКИ</span></a>
                 </div>
               </div>
               <div class="perforator-block">
@@ -200,15 +208,23 @@
                   <p class="old-price">30500 Р.</p>
                   <p class="buy-button">25500 Р.</p>
                 </div>
+                <div class="perforator-buy">
+                  <a href="#"><img src="img/icon-cart.svg" alt="Корзина"><span class="cart-button">КУПИТЬ</span></a>
+                  <a href="#"><span class="bookmark-button">В ЗАКЛАДКИ</span></a>
+                </div>
               </div>
-              <div class="perforator-block">
+              <div class="perforator-block new-products">
                 <div class="perforator-image">
-                  <img src="img/bosch-3000.png" width="127" height="112" alt="bosch-3000">
+                  <img src="img/bosch-2000.png" width="127" height="112" alt="bosch-3000">
                 </div>
                 <div class="perforator-info">
-                  <p class="perforator-name">Перфоратор BOSCH BFG 3000</p>
+                  <p class="perforator-name">Перфоратор BOSCH BFG 2000</p>
                   <p class="old-price">22500 Р.</p>
-                  <p class="buy-button">15500 Р.</p>
+                  <p class="buy-button">12500 Р.</p>
+                </div>
+                <div class="perforator-buy">
+                  <a href="#"><img src="img/icon-cart.svg" alt="Корзина"><span class="cart-button">КУПИТЬ</span></a>
+                  <a href="#"><span class="bookmark-button">В ЗАКЛАДКИ</span></a>
                 </div>
               </div>
             </div>
@@ -386,36 +402,33 @@
     </footer>
 
 <section class="modal-window">
-  <div class="modal-top">
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post"><h2 class="visually-hidden">Вход</h2>
-    <div class="modal-name">
-      <label>Ваше имя:
-      <input class="enter-name" name="username" type="text" placeholder="Имя Фамилия"/></label>
+  <form class="modal-form" action="https://echo.htmlacademy.ru" method="post"><h2 class="visually-hidden">Вход</h2>
+    <div class="modal-top">
+      <div class="top-left">
+        <label class="modal-name">Ваше имя:</label>
+        <input class="enter-name" name="username" type="text" placeholder="Имя Фамилия">
+      </div>
+      <div class="top-right">
+        <label class="modal-mail">Ваш e-mail:</label>
+        <input class="enter-mail" type="email" name="e-mail" placeholder="email@example.com">
+      </div>
     </div>
-    <div class="modal-mail">
-      <label>Ваш e-mail:
-      <input class="enter-mail" type="email" name="e-mail" placeholder="email@example.com"></label>
+    <div class="modal-comment">
+      <label class="comment-heading">Текст письма:</label>
+      <textarea class="comment-field" name="comment" rows="10" placeholder="В свободной форме"></textarea>
     </div>
-    </form>
-  </div>
-  <div class="modal-comment">
-    <form class="modal-body" action="https://echo.htmlacademy.ru/courses" method="post">
-    <div class="">
-      <label>Текст письма:
-      <textarea name="comment" id="comment-field" rows="10" placeholder="В свободной форме"></textarea>
-      </label>
+    <div class="submit-form">
+      <button class="modal-button" type="submit">Отправить</button>
     </div>
-    </form>
-  </div>
-  <div class="submit-form">
-    <input class="modal-button" type="submit" value="Отправить">
-  </div>
-  <button class="modal-close" type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>
+  </form>
+  <button class="modal-close-comment" type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>
 </section>
 
-<section class="modal-map"><h2>Путь</h2>
-  <img src="img/map.png" alt="map">
-   <button class="modal-close" type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>
+<section class="modal-map"><h2 class="visually-hidden">Путь</h2>
+  <div class="our-adress">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716014556!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1615822096213!5m2!1sru!2s" width="940" height="449" allowfullscreen title="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></iframe>
+  </div>
+  <button class="modal-close-map" type="button"><img src="img/icon-close.svg" alt="Закрыть"></button>
 </section>
 
   </body>
