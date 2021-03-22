@@ -1748,7 +1748,13 @@ input.search-input:focus + svg {
 
 .modal-window.active {
   display: block;
+  animation: bounce 0.6s;
 }
+
+.modal-window.error {
+  animation: shake 0.6s;
+}
+
 
 .modal-window::after {
   position:absolute;
@@ -1877,6 +1883,7 @@ input.search-input:focus + svg {
 
 .modal-close-comment {
   position: absolute;
+  cursor: pointer;
   top: 20px;
   right: 10px;
   border: none;
@@ -1906,6 +1913,7 @@ input.search-input:focus + svg {
 
 .modal-close-map {
   position: absolute;
+  cursor: pointer;
   top: 20px;
   right: 10px;
   border: none;
@@ -2686,4 +2694,46 @@ input.search-input:focus + svg {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 68px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
