@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>HTML Academy: Техномарт</title>
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.min.css" rel="stylesheet">
-      <link href="32.ico" rel="icon">
-      <link href="152.png" rel="apple-touch-icon">
-      <link href="manifest.webmanifest" rel="manifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="32.ico" rel="icon">
+    <link href="152.png" rel="apple-touch-icon">
+    <link href="manifest.webmanifest" rel="manifest">
   </head>
 
   <body class="page-body">
@@ -21,7 +21,8 @@
           <div class="search">
             <form method="get" action="https://echo.htmlacademy.ru" target="_blank" class="search-form">
               <div class="search-wrapper">
-                <input class="search-input" type="text" name="Search" placeholder="Поиск">
+                <label class="visually-hidden" for="search-area">Поиск</label>
+                <input class="search-input" type="search" name="Search" id="search-area" placeholder="Поиск">
                 <svg aria-hidden="true" focusable="false" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" /></svg>
               </div>
             </form>
@@ -123,20 +124,43 @@
             </div>
           </div>
           <div class="box-products box-picture">
-            <div class="box-title">
-              <h1 class="picture-heading">Перфораторы</h1>
-              <span class="picture-text">Настоящие мужские игрушки</span>
+            <div class="slide-one slide">
+              <div class="box-title">
+                <h1 class="picture-heading">Перфораторы</h1>
+                <span class="picture-text">Настоящие мужские игрушки</span>
+              </div>
+              <div class="slider-controls">
+                <button class="left-slide" type="button" aria-label="Слайд влево">
+                  <span class="visually-hidden">Слайд влево</span>
+                </button>
+                <button class="right-slide" type="button" aria-label="Сладй вправо">
+                  <span class="visually-hidden">Слайд вправо</span>
+                </button>
+              </div>
+              <div class="catalog-button">
+                <a href="catalog.html">Открыть каталог</a>
+              </div>
             </div>
-            <div class="slider-controls">
-              <button class="left-slide" type="button" aria-label="Слайд влево">
-                <span class="visually-hidden">Слайд влево</span>
-              </button>
-              <button class="right-slide" type="button" aria-label="Сладй вправо">
-                <span class="visually-hidden">Слайд вправо</span>
-              </button>
+            <div class="slide-two slide visually-hidden">
+              <div class="box-title">
+                <h1 class="picture-heading">Дрели</h1>
+                <span class="picture-text">Соседям на радость!</span>
+              </div>
+              <div class="slider-controls">
+                <button class="left-slide" type="button" aria-label="Слайд влево">
+                  <span class="visually-hidden">Слайд влево</span>
+                </button>
+                <button class="right-slide" type="button" aria-label="Сладй вправо">
+                  <span class="visually-hidden">Слайд вправо</span>
+                </button>
+              </div>
+              <div class="catalog-button">
+                <a href="#">Открыть каталог</a>
+              </div>
             </div>
-            <div class="catalog-button">
-              <a href="#">Открыть каталог</a>
+            <div class="dots">
+              <button type="button" class="dot" aria-label="slide-dot"></button>
+              <button type="button" class="dot" aria-label="slide-dot"></button>
             </div>
           </div>
           <div class="box-products box-green">
@@ -164,9 +188,11 @@
         </div>
       </div>
       <div class="popular-products products-block">
-        <div class="popular-products-title">
-          <h2>Популярные товары:</h2>
-          <a class="product-button" href="#">Все популярные товары</a>
+        <div class="container">
+          <div class="popular-products-title">
+            <h2>Популярные товары:</h2>
+            <a class="product-button" href="#">Все популярные товары</a>
+          </div>
         </div>
         <div class="popular-products">
           <div class="container">
@@ -217,13 +243,13 @@
                   <p class="buy-button">25500 Р.</p>
                 </div>
                 <div class="perforator-buy">
-                    <a class="cart-button" href="#">
-                      <svg aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#fff"/>
-                      </svg>
-                      <span>Купить</span>
-                    </a>
-                    <a href="#" class="bookmark-button">В закладки</a>
-                  </div>
+                  <a class="cart-button" href="#">
+                    <svg aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#fff"/>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <a href="#" class="bookmark-button">В закладки</a>
+                </div>
               </div>
               <div class="perforator-block new-products">
                 <div class="perforator-image">
@@ -235,22 +261,24 @@
                   <p class="buy-button">12500 Р.</p>
                 </div>
                 <div class="perforator-buy">
-                    <a class="cart-button" href="#">
-                      <svg aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#fff"/>
-                      </svg>
-                      <span>Купить</span>
-                    </a>
-                    <a href="#" class="bookmark-button">В закладки</a>
-                  </div>
+                  <a class="cart-button" href="#">
+                    <svg aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#fff"/>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <a href="#" class="bookmark-button">В закладки</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="popular-brands">
-        <div class="popular-brands-title">
-          <h2>Популярные производители:</h2>
-          <a class="brands-button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+        <div class="container">
+          <div class="popular-brands-title">
+            <h2>Популярные производители:</h2>
+            <a class="brands-button" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+          </div>
         </div>
         <div class="container">
           <div class="manufactures-list">
@@ -312,9 +340,20 @@
                 <li class="third-list"><h4>Кредит</h4></li>
               </ul>
             </div>
-            <div class="delivery">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+            <div class="services-slider">
+              <div class="services-slide services-slide-one">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,  поднимая его на ваш этаж!</p>
+              </div>
+              <div class="services-slide services-slide-two visually-hidden">
+                <h2>Гарантия</h2>
+                <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашейгарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="services-slide services-slide-three visually-hidden">
+                <h2>Кредит</h2>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                <a class="catalog-button" href="#">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>
@@ -412,44 +451,48 @@
             </div>
             <div class="footer-feedback">
               <p class="feedback">Обратная связь: <br> <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-              <p>Разработано - <br> <a href="htmlacademy.ru">htmlacademy.ru</a></p>
+              <p>Разработано - <br> <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-<section class="modal-window">
-  <form class="modal-form" method="get" action="https://echo.htmlacademy.ru" target="_blank"><h2 class="visually-hidden">Вход</h2>
-    <div class="modal-top">
-      <div class="top-left">
-        <label for="username" class="modal-name">Ваше имя:</label>
-        <input class="enter-name" id="username" name="username" type="text" placeholder="Имя Фамилия">
-      </div>
-      <div class="top-right">
-        <label for="e-mail" class="modal-mail">Ваш e-mail:</label>
-        <input class="enter-mail" id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
-      </div>
+    <div class="container">
+      <section class="modal-window">
+        <form class="modal-form" method="get" action="https://echo.htmlacademy.ru" target="_blank"><h2 class="visually-hidden">Вход</h2>
+          <div class="modal-top">
+            <div class="top-left">
+              <label for="username" class="modal-name">Ваше имя:</label>
+              <input class="enter-name" id="username" name="username" type="text" placeholder="Имя Фамилия">
+            </div>
+            <div class="top-right">
+              <label for="e-mail" class="modal-mail">Ваш e-mail:</label>
+              <input class="enter-mail" id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="modal-comment">
+            <label for="comment-field" class="comment-heading">Текст письма:</label>
+            <textarea class="comment-field" id="comment-field" name="comment" rows="10" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="submit-form">
+            <button class="modal-button" type="submit" aria-label="Отправить комментарий">Отправить</button>
+          </div>
+        </form>
+        <button class="modal-close-comment" type="button" aria-label="Закрыть окно"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
+      </section>
     </div>
-    <div class="modal-comment">
-      <label for="comment-field" class="comment-heading">Текст письма:</label>
-      <textarea class="comment-field" id="comment-field" name="comment" rows="10" placeholder="В свободной форме"></textarea>
-    </div>
-    <div class="submit-form">
-      <button class="modal-button" type="submit" aria-label="Отправить комментарий">Отправить</button>
-    </div>
-  </form>
-  <button class="modal-close-comment" type="button" aria-label="Закрыть окно"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
-</section>
 
-<section class="modal-map"><h2 class="visually-hidden">Путь</h2>
-  <div class="our-adress">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716014556!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1615822096213!5m2!1sru!2s" width="940" height="449" allowfullscreen title="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></iframe>
-  </div>
-  <button class="modal-close-map" type="button" aria-label="Закрыть окно"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
-</section>
+    <div class="container">
+      <section class="modal-map"><h2 class="visually-hidden">Путь</h2>
+        <div class="our-adress">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716014556!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1615822096213!5m2!1sru!2s" width="940" height="449" allowfullscreen title="Офис компании по адрессу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55"></iframe>
+        </div>
+        <button class="modal-close-map" type="button" aria-label="Закрыть окно"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
+      </section>
+    </div>
 
-<script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

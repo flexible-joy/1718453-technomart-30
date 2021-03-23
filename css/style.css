@@ -1,39 +1,38 @@
 /* Font face */
 
 @font-face {
-  font-family: 'cuprum';
-  src: url('../fonts/cuprum.woff'),
-       url('../fonts/cuprum.woff2');
+  font-family: "Cuprum";
+  src: local("Cuprum"), local("Cuprum-Regular"), url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'cuprumbold';
-  src: url('../fonts/cuprumbold.woff'),
-       url('../fonts/cuprumbold.woff2');
+  font-family: "Cuprum";
+  src: local("Cuprum Italic"), local("Cuprum-Italic"), url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'cuprumbolditalic';
-  src: url('../fonts/cuprumbolditalic.woff'),
-       url('../fonts/cuprumbolditalic.woff2');
+  font-family: "Cuprum";
+  src: local("Cuprum Bold"), local("Cuprum-Bold"), url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'cuprumitalic';
-  src: url('../fonts/cuprumitalic.woff'),
-       url('../fonts/cuprumitalic.woff2');
+  font-family: "PT Sans";
+  src: local("PT Sans"), local("PTSans-Regular"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'ptsans';
-  src: url('../fonts/ptsans.woff'),
-       url('../fonts/ptsans.woff2');
-}
-
-@font-face {
-  font-family: 'ptsansbold';
-  src: url('../fonts/ptsansbold.woff'),
-       url('../fonts/ptsansbold.woff2');
+  font-family: "PT Sans";
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Colors */
@@ -63,7 +62,8 @@
 }
 
 .page-body {
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   font-family: "Cuprum", "Tahoma", sans-serif;
@@ -87,8 +87,7 @@ a {
 }
 
 .main-header {
-  width: 1200px;
-  height: 320px;
+  min-height: 320px;
   margin: 0 auto;
   background-color: var(--basic-background);
 }
@@ -107,7 +106,6 @@ a {
 
 .button-logo {
   display: flex;
-  text-align: center;
   font-size: 14px;
   line-height: 18px;
   width: 220px;
@@ -158,9 +156,6 @@ a {
 }
 
 .search-input::placeholder {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basiс-white);
@@ -242,10 +237,7 @@ input.search-input:focus + svg {
 .bookmark a,
 .cart a {
   color: var(--basiс-white);
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   display: flex;
@@ -255,10 +247,7 @@ input.search-input:focus + svg {
 
 .cart-active a {
   color: var(--basiс-white);
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   display: flex;
@@ -320,7 +309,6 @@ input.search-input:focus + svg {
 .order-button {
   display: flex;
   text-align: center;
-  font-family: Cuprum;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -365,17 +353,15 @@ input.search-input:focus + svg {
 }
 
 .about {
-  font-family: Cuprum;
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
   line-height: 23px;
   width: 197px;
-  height: 71px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 30px;
+}
+
+.about p {
+  max-width: 197px;
 }
 
 .contacts-wrapper {
@@ -386,10 +372,7 @@ input.search-input:focus + svg {
 }
 
 .contacts-address {
-  font-family: Cuprum;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: #32425C;
@@ -407,9 +390,7 @@ input.search-input:focus + svg {
 }
 
 .tel-number {
-  font-family: Cuprum;
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   color: #EE3643;
@@ -445,10 +426,7 @@ input.search-input:focus + svg {
   padding: 0.5em 1em;
   color: var(--basic-black);
   background-color: var(--basiс-white);
-  font-family: Cuprum;
   font-size: 21px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px;
   text-align: center;
 }
@@ -479,7 +457,7 @@ input.search-input:focus + svg {
 
 .buy-button {
   position: relative;
-  font-family: PTSansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -530,10 +508,7 @@ input.search-input:focus + svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   padding: 0 25px;
 }
@@ -543,6 +518,7 @@ input.search-input:focus + svg {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   background-color: #32425C;
   padding: 0;
@@ -559,22 +535,16 @@ input.search-input:focus + svg {
 }
 
 .site-navigation li:hover {
-    background-color: #293449;
+  background-color: #293449;
 }
 
 .site-navigation li:active {
-    background-color: #1D2739 ;
+  background-color: #1D2739 ;
 }
 
 .site-navigation a:active {
   color: var(--basiс-white);
   opacity: 0.5;
-}
-
-/* Main */
-
-.main-container {
-  width: 1200px;
 }
 
 /* General products styles  */
@@ -604,9 +574,7 @@ input.search-input:focus + svg {
 
 .products-heading {
   color: var(--basiс-white);
-  font-family: Cuprum;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 14px;
@@ -621,10 +589,7 @@ input.search-input:focus + svg {
 }
 
 .left-side a {
-  font-family: Cuprum;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
@@ -667,7 +632,7 @@ input.search-input:focus + svg {
   margin-left: 40px;
 }
 
-.new-products:before{
+.new-products:before {
   position: absolute;
   content: "NEW";
   top: 10px;
@@ -676,10 +641,7 @@ input.search-input:focus + svg {
   height: 30px;
   background-color: var(--basic-red);
   color: var(--basiс-white);
-  font-family: Cuprum;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   transform: rotate(45deg);
@@ -752,20 +714,32 @@ input.search-input:focus + svg {
 .box-picture {
   width: 620px;
   height: 266px;
+  padding: 0;
   grid-column: 1/3;
   grid-row: 2/4;
   position: relative;
-  padding: 0;
-  background-color: #E0CDBB;
-  background-image: url("../img/perforator.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.slide {
   display: flex;
   flex-direction: column;
 }
 
-.box-title {
+.slide-one {
+  background-color: #E0CDBB;
+  background-image: url("../img/perforator.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.slide-two {
+  background-color: #E0CDBB;
+  background-image: url("../img/drill.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-title {
   width: 620px;
   height: 81px;
   padding-left: 24px;
@@ -774,10 +748,8 @@ input.search-input:focus + svg {
 }
 
 .picture-heading {
-  font-family: Cuprumbold;
   font-size: 36px;
   line-height: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 36px;
   margin: 0;
@@ -786,10 +758,7 @@ input.search-input:focus + svg {
 }
 
 .picture-text {
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   color: var(--basiс-white);
 }
@@ -811,6 +780,8 @@ input.search-input:focus + svg {
   outline: none;
   background: transparent;
   fill: var(--basiс-white);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .left-slide::after {
@@ -834,6 +805,8 @@ input.search-input:focus + svg {
   outline: none;
   background: transparent;
   fill: var(--basiс-white);
+  cursor: pointer;
+  z-index: 2;
 }
 
 .right-slide::after {
@@ -848,7 +821,6 @@ input.search-input:focus + svg {
   background-repeat: no-repeat;
 }
 
-
 .catalog-button {
   background-color: var(--basic-red);
   width: 192px;
@@ -857,6 +829,7 @@ input.search-input:focus + svg {
   align-items: center;
   justify-content: center;
   margin-left: 24px;
+  border-radius: 3px;
 }
 
 .catalog-button a {
@@ -872,6 +845,38 @@ input.search-input:focus + svg {
 
 .catalog-button:active {
   background-color: #BA2732;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  min-width: 50px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.dot {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--basiс-white);
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot:last-child::after {
+  position: absolute;
+  content: "";
+  width: 65%;
+  height: 70%;
+  background-color: var(--basic-red);
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
 }
 
 /* Green box */
@@ -937,7 +942,6 @@ input.search-input:focus + svg {
 .popular-products-title{
   width: 940px;
   height: 89px;
-  margin-left: 130px;
   margin-top: 59px;
   margin-bottom: 20px;
   display: grid;
@@ -946,22 +950,17 @@ input.search-input:focus + svg {
 }
 
 .popular-products-title h2 {
-  font-family: Cuprum;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
   padding-left: 28px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   text-transform: uppercase;
 }
 
 .popular-products-title .product-button {
-  font-family: Cuprum;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   width: 192px;
@@ -1047,9 +1046,8 @@ input.search-input:focus + svg {
 .perforator-name {
   height: 43px;
   width: 185px;
-  font-family: PTSansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   text-align: center;
   margin: 0;
@@ -1058,9 +1056,8 @@ input.search-input:focus + svg {
 .old-price {
   height: 18px;
   width: 172px;
-  font-family: PTSansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
   line-height: 18px;
   text-decoration-line: line-through;
@@ -1071,24 +1068,21 @@ input.search-input:focus + svg {
 
 /* Popular brands */
 
-.popular-brands-title{
+.popular-brands-title {
   width: 940px;
   height: 89px;
   margin-top: 70px;
   margin-bottom: 20px;
-  margin-left: 130px;
   display: grid;
   grid-template-columns: 1fr max-content;
   background-color: #F9F5F0;
 }
 
 .popular-brands-title h2 {
-  font-family: Cuprum;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
   padding-left: 28px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -1118,7 +1112,7 @@ input.search-input:focus + svg {
 }
 
 
-.popular-brands-title h2{
+.popular-brands-title h2 {
   padding-left: 28px;
 }
 
@@ -1142,8 +1136,6 @@ input.search-input:focus + svg {
 
 .services-block {
   position: relative;
-  width: 1200px;
-  height: 522px;
   margin-top: 70px;
   background-color: var(--basic-background);
 }
@@ -1154,12 +1146,10 @@ input.search-input:focus + svg {
   justify-content: flex-start;
 }
 
-.services-top h2{
-  font-family: Cuprum;
+.services-top h2 {
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -1168,12 +1158,9 @@ input.search-input:focus + svg {
 }
 
 .services-top p {
-  font-family: PTSans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  height: 49px;
   width: 394px;
   padding-top: 25px;
   margin: 0;
@@ -1188,9 +1175,7 @@ input.search-input:focus + svg {
   position: relative;
   display: flex;
   width: 240px;
-  font-family: Cuprum;
   font-size: 21px;
-  font-style: normal;
   font-weight: 700;
   color: var(--basiс-white);
   padding: 15px 0 15px 0;
@@ -1259,37 +1244,60 @@ input.search-input:focus + svg {
 
 /* Delivery */
 
-.delivery {
+.services-slider {
   position: relative;
   width: 619px;
   min-height: 283px;
+}
+
+.services-slide {
+  width: 100%;
   left:  80px;
   top: 16px;
   padding-top: 67px;
+  padding-left: 80px;
+  padding-bottom: 20px;
   background-image: url(../img/car.png);
   background-position: top 40px right 0;
   background-repeat: no-repeat;
 }
 
-.delivery h2 {
-  font-family: Cuprum;
+.services-slide .catalog-button {
+  width: 195px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basiс-white);
+  margin-left: 0;
+  margin-top: 23px;
+}
+
+.services-slide-two {
+  background-image: url(../img/warranty.png);
+  background-position: top 40px right 0;
+  background-repeat: no-repeat;
+}
+
+.services-slide-three {
+  background-image: url(../img/credit.png);
+  background-position: top 40px right 0;
+  background-repeat: no-repeat;
+}
+
+.services-slide h2 {
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   margin: 0;
 }
 
-.delivery p {
-  height: 99px;
-  width: 300px;
-  font-family: PTSans;
+.services-slide p {
+  width: 350px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
@@ -1298,7 +1306,6 @@ input.search-input:focus + svg {
 
 .company {
   position: relative;
-  width: 1200px;
   background-color: var(--basic-white);
   padding-bottom: 70px;
   padding-top: 41px;
@@ -1332,11 +1339,9 @@ input.search-input:focus + svg {
 }
 
 .about-company h2 {
-  font-family: Cuprum;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -1344,17 +1349,13 @@ input.search-input:focus + svg {
 
 .about-company p {
   width: 460px;
-  font-family: PTSans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .partners p {
-  font-family: PTSans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 1px;
@@ -1366,9 +1367,6 @@ input.search-input:focus + svg {
 }
 
 .partners-list a {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-black);
@@ -1426,18 +1424,14 @@ input.search-input:focus + svg {
 
 .company-right p {
   margin: 0;
-  font-family: PTSans;
-  font-weight: normal;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
   align-self: flex-start;
   margin-left: 168px;
 }
 
-.address-button{
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: 400;
+.address-button {
   font-size: 14px;
   line-height: 18px;
   width: 300px;
@@ -1523,13 +1517,11 @@ input.search-input:focus + svg {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-nav a {
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   color: var(--basiс-white);
 }
@@ -1558,7 +1550,6 @@ input.search-input:focus + svg {
   color: #F3F7F9;
   width: 321px;
   height: 49px;
-  font-family: Cuprum;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1580,13 +1571,11 @@ input.search-input:focus + svg {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-catalog a {
-  font-family: Cuprum;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   color: var(--warning);
 }
@@ -1624,10 +1613,7 @@ input.search-input:focus + svg {
 }
 
 .first-block span {
-  font-family: Cuprum;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
 }
 
@@ -1708,10 +1694,7 @@ input.search-input:focus + svg {
 }
 
 .footer-feedback p {
-  font-family: Cuprum;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
 }
 
@@ -1794,7 +1777,7 @@ input.search-input:focus + svg {
 }
 
 .enter-name::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-left: 12px;
@@ -1820,7 +1803,7 @@ input.search-input:focus + svg {
 }
 
 .enter-mail::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-left: 12px;
@@ -1848,7 +1831,7 @@ input.search-input:focus + svg {
 }
 
 .comment-field::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
   padding-left: 12px;
@@ -1862,9 +1845,6 @@ input.search-input:focus + svg {
 
 .modal-button {
   text-align: center;
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   width: 460px;
@@ -1926,12 +1906,6 @@ input.search-input:focus + svg {
 .modal-buy {
   width: 620px;
   position: relative;
-  /* position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto; */
   margin-top: 50px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -1973,7 +1947,7 @@ input.search-input:focus + svg {
 }
 
 .product-add h3 {
-  font-family: Cuprumbold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   padding-top: 20px;
@@ -2040,22 +2014,26 @@ input.search-input:focus + svg {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+}
 
+.profile-wrapper {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--basiс-white);
 }
 
 .profile-username {
-  display: inline-block;
-  vertical-align: top;
-  margin: 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: solid 1px transparent;
-  padding: 0.5em 1em;
   color: var(--basic-black);
-  background-color: var(--basiс-white);
 }
+
 .username {
-  font-family: Cuprum;
   font-size: 21px;
-  font-weight: 400;
   line-height: 21px;
   margin: 0;
 }
@@ -2068,27 +2046,46 @@ input.search-input:focus + svg {
   color: var(--basic-black);
 }
 
+.profile-username:active span {
+  color: var(--basic-greylight);
+}
+
 .profile-username svg {
   fill: var(--basic-greylight);
+  margin-right: 21px;
 }
 
 .profile-username:hover svg {
   fill: var(--basic-grey);
 }
 
-.profile-username:active {
-  color: var(--basic-greylight);
+.profile-username:active svg {
+  fill: var(--basic-greylight);
 }
 
-.profile-username:active svg {
+
+.exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.exit svg {
+  fill: var(--basic-greylight);
+}
+
+.exit:hover svg {
+  fill: var(--basic-grey);
+}
+
+.exit:active svg {
   fill: var(--basic-greylight);
 }
 
 .order-cabinet {
   position: relative;
-  font-family: Cuprum;
   font-size: 16px;
-  font-weight: 400;
   line-height: 18px;
   padding-top: 7px;
   display: flex;
@@ -2125,7 +2122,7 @@ input.search-input:focus + svg {
 }
 
 .breadcrumb a {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -2157,7 +2154,7 @@ input.search-input:focus + svg {
 
 /* Page title */
 
-.perforator-page-title{
+.perforator-page-title {
   width: 940px;
   height: 89px;
   background-color: var(--basic-background);
@@ -2172,10 +2169,7 @@ input.search-input:focus + svg {
 }
 
 .page-title {
-  font-family: Cuprum;
   font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px;
   padding-top: 29px;
   padding-left: 29px;
@@ -2212,10 +2206,8 @@ input.search-input:focus + svg {
 }
 
 .sort-heading {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -2223,10 +2215,8 @@ input.search-input:focus + svg {
 }
 
 .sort-item {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   color: var(--basic-black);
   opacity: 0.3;
@@ -2267,7 +2257,7 @@ input.search-input:focus + svg {
   border: none;
   border-radius: 5px;
   background: #F7F3EC;
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2288,7 +2278,7 @@ input.search-input:focus + svg {
 }
 
 .filter-item legend {
-  font-family: PTSansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -2346,7 +2336,7 @@ input.search-input:focus + svg {
 
 .price-controls label {
   text-transform: uppercase;
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
@@ -2376,9 +2366,8 @@ input.search-input:focus + svg {
 }
 
 .price {
-  font-family: ptsansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
 }
@@ -2398,14 +2387,14 @@ input.search-input:focus + svg {
 }
 
 .filter-brands ul {
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 19px;
   padding-left: 0;
 }
 
 .brands-checkbox {
-  font-family: PTSansbold;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 30px;
   padding-top: 42px;
@@ -2425,14 +2414,14 @@ input.search-input:focus + svg {
 }
 
 .filter-power ul {
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 19px;
   padding-left: 0;
 }
 
 .power-checkbox {
-  font-family: PTSansbold;
+  font-family: P TSans;
   font-size: 17px;
   line-height: 30px;
   padding-top: 42px;
@@ -2508,7 +2497,7 @@ input.search-input:focus + svg {
 
 /* Filter button */
 
-.filter-button-block{
+.filter-button-block {
   padding-top: 36px;
 }
 
@@ -2521,7 +2510,7 @@ input.search-input:focus + svg {
   padding: 0;
   color: var(--basic-black);
   background-color: var(--basiс-white);
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
@@ -2650,7 +2639,7 @@ input.search-input:focus + svg {
 }
 
 .pagination-link-next {
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2676,10 +2665,9 @@ input.search-input:focus + svg {
 }
 
 .about-perforator h2 {
-  font-family: Cuprum;
-  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   margin-top: 64px;
   margin-bottom: 12px;
@@ -2688,10 +2676,8 @@ input.search-input:focus + svg {
 .about-perforator p {
   height: 74px;
   width: 907px;
-  font-family: PTSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   margin-bottom: 68px;
 }
@@ -2702,15 +2688,12 @@ input.search-input:focus + svg {
   0% {
     transform: translateY(-2000px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0);
   }
@@ -2721,7 +2704,6 @@ input.search-input:focus + svg {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -2729,7 +2711,6 @@ input.search-input:focus + svg {
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
