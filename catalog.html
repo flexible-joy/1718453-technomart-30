@@ -21,7 +21,7 @@
           <div class="search">
             <form method="get" action="https://echo.htmlacademy.ru" target="_blank" class="search-form">
               <div class="search-wrapper">
-                <label class="visually-hidden" for="search-area">Поиск</label>product-
+                <label class="visually-hidden" for="search-area">Поиск</label>
                 <input class="search-input" type="search" name="Search" id="search-area" placeholder="Поиск">
                 <svg aria-hidden="true" focusable="false" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" /></svg>
               </div>
@@ -56,14 +56,14 @@
                 <a class="tel" href="tel:+78125550505">
                   <svg aria-hidden="true" focusable="false" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z" fill="#B7BFC8"/></svg>
-                  <span class="tel-number">+7 (812) 555-05-056</span>
+                  <span class="tel-number">+7 (812) 555-05-05</span>
                 </a>
                 <span class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               </div>
             </div>
             <div class="profile">
               <div class="profile-wrapper">
-                <a class="profile-username">
+                <a href="#" class="profile-username">
                   <svg aria-hidden="true" focusable="false" width="20" height="18" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                   </svg>
@@ -85,17 +85,19 @@
         </div>
       </div>
       <div class="block-navigation">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -158,41 +160,41 @@
                 <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
                   <fieldset class="filter-brands">
                     <legend class="brands-checkbox">ПРОИЗВОДИТЕЛИ:</legend>
-                      <ul class="brands-checkbox-list">
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
-                          <label for="filter-bosch">BOSCH</label>
-                        </li>
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-interskol">
-                          <label for="filter-interskol">ИНТЕРСКОЛ</label>
-                        </li>
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita" checked>
-                          <label for="filter-makita">MAKITA</label>
-                        </li>
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="DeWALT" id="filter-dewalt">
-                          <label for="filter-dewalt">DEWALT</label>
-                        </li>
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-hitachi">
-                          <label for="filter-hitachi">HITACHI</label>
-                        </li>
-                      </ul>
+                    <ul class="brands-checkbox-list">
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
+                        <label for="filter-bosch">BOSCH</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-interskol">
+                        <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita" checked>
+                        <label for="filter-makita">MAKITA</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="DeWALT" id="filter-dewalt">
+                        <label for="filter-dewalt">DEWALT</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="HITACHI" id="filter-hitachi">
+                        <label for="filter-hitachi">HITACHI</label>
+                      </li>
+                    </ul>
                   </fieldset>
                   <fieldset class="filter-power">
                     <legend class="power-checkbox">ПИТАНИЕ:</legend>
-                      <ul class="power-checkbox-list">
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-radio" type="radio" name="battery" id="battery">
-                          <label for="battery">АККУМУЛЯТОРНЫЕ</label>
-                        </li>
-                        <li class="filter-option">
-                          <input class="visually-hidden filter-input-radio" type="radio" name="battery" id="power" checked>
-                          <label for="power">СЕТЕВЫЕ</label>
-                        </li>
-                      </ul>
+                    <ul class="power-checkbox-list">
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" type="radio" name="battery" id="battery">
+                        <label for="battery">АККУМУЛЯТОРНЫЕ</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input-radio" type="radio" name="battery" id="power" checked>
+                        <label for="power">СЕТЕВЫЕ</label>
+                      </li>
+                    </ul>
                   </fieldset>
                   <div class="filter-button-block">
                     <button class="filter-button" type="submit" aria-label="Показать товары, согласно выбранных параметров">Показать</button>

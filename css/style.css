@@ -59,13 +59,14 @@
 
 .page {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page-body {
   width: 100%;
   min-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin: 0;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -205,7 +206,6 @@ input.search-input:focus + svg {
   height: 42px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .cart {
@@ -213,7 +213,6 @@ input.search-input:focus + svg {
   height: 42px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .cart-active {
@@ -227,7 +226,7 @@ input.search-input:focus + svg {
 
 .bookmark:active ,
 .cart:active {
-  background-color: #161D29;
+  background-color: #8794ac;
 }
 
 .cart-active:active {
@@ -258,7 +257,8 @@ input.search-input:focus + svg {
 .bookmark svg {
   fill: #FFFFFF;
   opacity: 0.3;
-  padding-right: 9px;
+  margin-right: 10px;
+  margin-left: 9px;
 }
 
 .bookmark:hover svg {
@@ -275,7 +275,8 @@ input.search-input:focus + svg {
 .cart svg {
   fill: #FFFFFF;
   opacity: 0.3;
-  padding-right: 8px;
+  margin-right: 11px;
+  margin-left: 19px;
 }
 
 .cart-active svg {
@@ -338,7 +339,7 @@ input.search-input:focus + svg {
 .center-header {
   position: relative;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 46px;
   margin-bottom: 40px;
 }
 .center-header-wrapper {
@@ -362,6 +363,7 @@ input.search-input:focus + svg {
 
 .about p {
   max-width: 197px;
+  margin: 0;
 }
 
 .contacts-wrapper {
@@ -376,6 +378,7 @@ input.search-input:focus + svg {
   line-height: 24px;
   text-align: center;
   color: #32425C;
+  padding-left: 19px;
 }
 
 .tel {
@@ -384,9 +387,10 @@ input.search-input:focus + svg {
   background-color: #F3F7F9;
   border: 3px solid #FFFFFF;
   box-sizing: border-box;
+  margin-left: 12px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .tel-number {
@@ -394,7 +398,7 @@ input.search-input:focus + svg {
   font-weight: 700;
   line-height: 30px;
   color: #EE3643;
-  margin-left: 16px;
+  margin-left: 18px;
 }
 
 .login-wrapper {
@@ -451,10 +455,6 @@ input.search-input:focus + svg {
   fill: var(--basic-greylight);
 }
 
-.button-enter {
-  margin-left: 6px;
-}
-
 .buy-button {
   position: relative;
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -493,7 +493,6 @@ input.search-input:focus + svg {
 
 .main-navigation {
   position: relative;
-  width: 940px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 24px;
@@ -514,14 +513,14 @@ input.search-input:focus + svg {
 }
 
 .site-navigation {
-  width: 940px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
   background-color: #32425C;
-  padding: 0;
+  padding: 0 15px;
+  margin: 0;
 }
 
 .site-navigation::after {
@@ -552,7 +551,7 @@ input.search-input:focus + svg {
 .products-wrapper {
   width: 940px;
   height: 409px;
-  margin-top: 70px;
+  margin-top: 59px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: 123px 123px 123px 123px 123px 123px 123px;
@@ -939,7 +938,7 @@ input.search-input:focus + svg {
 
 /* Popular products */
 
-.popular-products-title{
+.popular-products-title {
   width: 940px;
   height: 89px;
   margin-top: 59px;
@@ -1008,11 +1007,12 @@ input.search-input:focus + svg {
 
 .perforator-image {
   width: 184px;
-  height: 164px;
+  height: 145px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: -18px;
 }
 
 .perforator-buy {
@@ -1035,16 +1035,14 @@ input.search-input:focus + svg {
 
 .perforator-info {
   width: 185px;
-  height: 119px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 8px;
+  margin-top: 30px;
 }
 
 .perforator-name {
-  height: 43px;
   width: 185px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 18px;
@@ -1054,7 +1052,6 @@ input.search-input:focus + svg {
 }
 
 .old-price {
-  height: 18px;
   width: 172px;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
@@ -1136,6 +1133,7 @@ input.search-input:focus + svg {
 
 .services-block {
   position: relative;
+  min-height: 512px;
   margin-top: 70px;
   background-color: var(--basic-background);
 }
@@ -1179,6 +1177,7 @@ input.search-input:focus + svg {
   font-weight: 700;
   color: var(--basiс-white);
   padding: 15px 0 15px 0;
+  margin-top: 51px;
 }
 
 .services-list h4 {
@@ -1254,11 +1253,11 @@ input.search-input:focus + svg {
   width: 100%;
   left:  80px;
   top: 16px;
-  padding-top: 67px;
+  padding-top: 73px;
   padding-left: 80px;
   padding-bottom: 20px;
   background-image: url(../img/car.png);
-  background-position: top 40px right 0;
+  background-position: top 67px right 0;
   background-repeat: no-repeat;
 }
 
@@ -1300,6 +1299,7 @@ input.search-input:focus + svg {
   font-size: 13px;
   line-height: 24px;
   text-align: left;
+  margin-top: 5px;
 }
 
 /* Company */
@@ -1307,8 +1307,8 @@ input.search-input:focus + svg {
 .company {
   position: relative;
   background-color: var(--basic-white);
-  padding-bottom: 70px;
-  padding-top: 41px;
+  padding-bottom: 52px;
+  padding-top: 66px;
 }
 
 .company p {
@@ -1336,6 +1336,7 @@ input.search-input:focus + svg {
 
 .about-company {
   width: 460px;
+  padding-top: 15px;
 }
 
 .about-company h2 {
@@ -1345,6 +1346,7 @@ input.search-input:focus + svg {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .about-company p {
@@ -1352,18 +1354,19 @@ input.search-input:focus + svg {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 21px 0 0 0;
 }
 
 .partners p {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 1px;
+  margin-top: 29px;
 }
 
 .partners-list {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 
 .partners-list a {
@@ -1403,6 +1406,7 @@ input.search-input:focus + svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 21px;
 }
 
 .partners-button:hover {
@@ -1420,6 +1424,8 @@ input.search-input:focus + svg {
   text-transform: uppercase;
   align-self: flex-start;
   margin-left: 168px;
+  margin-top: 16px;
+  margin-bottom: 5px;
 }
 
 .company-right p {
@@ -1464,6 +1470,7 @@ input.search-input:focus + svg {
 /* Top footer */
 
 .top-footer {
+  margin-top: 10px;
   min-height: 193px;
   background-color: #32425C;
 }
@@ -1471,7 +1478,7 @@ input.search-input:focus + svg {
 .footer-logo {
   display: flex;
   text-align: center;
-  font-size: 14px;
+  font-size: 30px;
   line-height: 18px;
   width: 220px;
   height: 68px;
@@ -2397,6 +2404,7 @@ input.search-input:focus + svg {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 30px;
+  font-weight: 700;
   padding-top: 42px;
   padding-bottom: 15px;
 }
@@ -2421,9 +2429,10 @@ input.search-input:focus + svg {
 }
 
 .power-checkbox {
-  font-family: P TSans;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 30px;
+  font-weight: 700;
   padding-top: 42px;
   padding-bottom: 15px;
 }
@@ -2670,7 +2679,7 @@ input.search-input:focus + svg {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 64px;
-  margin-bottom: 12px;
+  margin-bottom: 25px;
 }
 
 .about-perforator p {
